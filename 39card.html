@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .row
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 50px;
+        }
+        .main
+        {
+            width: 230px;
+            box-shadow: 0 0 5px #000;
+        }
+        .up
+        {
+            height: 230px;
+            position: relative;
+            backface-visibility: hidden;
+        }
+        img
+        {
+            transition: 1s;
+        }
+        .down
+        {
+            height: 100px;
+            text-align: center;
+            font-size:25px;
+            line-height: 40px;
+            background: lightgray;
+        }
+        .price
+        {
+            width: 100px;
+            background: rgb(110, 145, 145);
+            color: #fff;
+            margin: 0 auto;
+        }
+        .up:hover img
+        {
+            transform: rotateY(180deg);
+        }
+        .new
+        {
+            height: 30px;
+            width: 60px;
+            background: rgb(110, 145, 145);
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .view
+        {
+            height: 40px;
+            width: 230px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 0;
+            /* z-index: 2; */
+            opacity: 0;
+        }
+        .up:hover .view
+        {
+            top: 230px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="main">
+            <div class="view">Quick View</div>
+            <div class="up">
+                <img src="m1.jpg" alt="" height="100%" width="100%">
+                <span class="new">New</span>
+            </div>
+            <div class="down">
+                <div class="shirt">Shirt Design</div>
+                <div class="price">$40.00</div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="up">
+                <img src="m2.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">T-Shirt Design</div>
+                <div class="price">$50.00</div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="up">
+                <img src="m3.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">Track</div>
+                <div class="price">$60.00</div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="up">
+                <img src="m4.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">T-Shirt Design</div>
+                <div class="price">$70.00</div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="up">
+                <img src="m5.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">Jeans Design</div>
+                <div class="price">$150.00</div>
+            </div>
+        </div>
+    
+    
+        <div class="main">
+            <div class="up">
+                <img src="m6.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">Belt</div>
+                <div class="price">$80.00</div>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="up">
+                <img src="m7.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">Watch</div>
+                <div class="price">$30.00</div>
+            </div>
+        </div>
+    
+    
+        <div class="main">
+            <div class="up">
+                <img src="m8.jpg" alt="" height="100%" width="100%">
+                <div class="new">New</div>
+            </div>
+            <div class="down">
+                <div class="shirt">Blazer</div>
+                <div class="price">$99.00</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border In HTML</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: teal;
+            border: 10px solid black;
+            border: 10px dashed red;
+            border: 10px dotted red;
+            border: 10px double red;
+            border: 10px ridge red;
+            border: 10px inset red;
+            border: 10px outset red;
+            border-radius: 20px;
+            border-radius: 50%;
+        }
+        .border-image{
+            width: 500px;
+            height: 500px;
+            border: 50px solid ;
+            border-image: url(../../Images/banner.jpg) 1 ;
+        }
+        .box-img{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background: url(../../Images/banner.jpg)no-repeat center center/cover;
+            border-radius: 50%;
+            border: 5px solid red;
+            outline: 5px dashed blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border In HTML</h1>
+    <hr>
+    <div class="box"></div>
+    <hr>
+
+    <div class="border-image">
+
+    </div>
+    <hr>
+    <div class="box-img"></div>
+</body>
+</html>

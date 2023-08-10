@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .sub
+        {
+            display: grid;
+            width: 900px;
+            height: 1000px;
+            place-items: center;
+            gap: 30px;
+        }
+        .up
+        {
+            height: 500px;
+            width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .up1
+        {
+            border-radius: 5px;
+            display: grid;
+            gap: 30px;
+        }
+        .up1 div
+        {
+            height: 275px;
+            border-radius: 5px;
+        }
+        .down
+        {
+            height: 275px;
+            width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            border-radius: 5px;
+        }
+        .down div
+        {
+            height: 275px;
+            border-radius: 5px;
+        }
+        .image1,.image2,.image3,.image4,.image5,.image6,.residencial,.commercial
+        {
+            background-image:url(205-584x438.jpg);
+            background-size: cover;
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            font-size: 14px;
+            line-height: 75px;
+            padding: 20px;
+        }
+        .image2
+        {
+            background-image: url(023-1024x768.jpg);
+            background-position: -250px;
+        }
+        .image3
+        {
+            background-image: url(026-1024x768.jpg);
+        }
+        .image4
+        {
+            background-image: url(020-1024x768.jpg);
+        }
+        .image5
+        {
+            background-image: url(206-1024x683.jpg);
+        }
+        .image6
+        {
+            background-image: url(203-1024x683.jpg);
+        }
+        .residencial
+        {
+            background-image: url(020-1024x768.jpg);
+        }
+        .commercial
+        {
+            background-image: url(026-1024x768.jpg);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <div class="up">
+                <div class="up1">
+                    <div class="residencial"></div>
+                    <div class="image1"></div>
+                </div>
+                <div class="up1 image2"></div>
+                <div class="up1">
+                    <div class="image3"></div>
+                    <div class="image4"></div>
+                </div>
+            </div>
+            <div class="down">
+                <div class="commercial"></div>
+                <div class="image5"></div>
+                <div class="image6"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
